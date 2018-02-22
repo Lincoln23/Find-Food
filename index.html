@@ -15,17 +15,17 @@
   $(document).ready(function() {
     $("#icon1").click(function() {
       typeOf = ['restaurant'];
-      alert("Changed to restaurant");
+      alert("Changed to Restaurant!");
 
     });
     $("#icon2").click(function() {
       typeOf = ['cafe']
-      alert("Changed to Coffe Shop!");
+      alert("Changed to Café!");
 
     });
     $("#icon3").click(function() {
       typeOf = ['bakery']
-      alert("Changed to bakery!");
+      alert("Changed to Bakery!");
 
     });
 
@@ -122,11 +122,14 @@
       <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <style>
+      #headerTitle{
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      }
         .navbar {
           margin-bottom: 0;
           border-radius: 0;
-          background-color: rgb(209, 209, 209);
-          color: rgb(255, 255, 255);
+          background-color: rgb(80,78,78);
+          color: white;
           padding: 1% 0%;
           font-size: 1.2em;
         }
@@ -135,14 +138,15 @@
           float: left;
           min-height: 55px;
           padding-left: 0 15px 5px;
+          padding bottom: 15px;
         }
 
         .navbar-inverse .navbar-nav .active a,
         .navbar-inverse .navbar-nav .active a:focus,
         .navbar-inverse .navbar-nav .active a:hover {
           float: right;
-          background-color: rgb(196, 196, 196);
-          color: rgb(0, 0, 0);
+          background-color: rgb(50,50,50);
+          color: white;
         }
 
         .navbar-inverse .navbar-nav li a {
@@ -201,8 +205,19 @@
         #map-canvas {
           height: 1000px;
           width: 1000px;
+          margin-left: -50px;
         }
-
+        body{
+          background: rgb(210,210,210);
+        }
+        .jumbotron{
+          background-position: center;
+          padding: 10px;
+          margin-left: 60px;
+          margin-right: 60px;
+          background: rgb(175,175,175);
+          border-width: 7px;
+        }
 
         @media (max-width: 900px) {
           < !--removes the button and text for the mobile section-->.carousel-caption {
@@ -254,9 +269,9 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/Food3.jpg">
+        <img src="img/Food2.jpg">
         <div class="carousel-caption">
-          <h1 id="headerTitle"> Free Dinner is Best Dinner </h1>
+          <h1 id="headerTitle">looking for food?</h1>
           <br>
           <button type="button" onclick="window.location='#options'" class="btn btn-default">Find a place to eat!
           </button>
@@ -265,7 +280,7 @@
       </div>
       <!--End of active-->
       <div class="item">
-        <img src="img/Food2.jpg">
+        <img src="img/Cafe.png">
       </div>
       <div class="item">
         <img src="img/Food1.jpg">
@@ -291,7 +306,7 @@
       </div>
       <div class="col-sm-4">
         <img src="img/Coffe.png" id="icon2">
-        <h4>Nearby Coffe Shop!</h4>
+        <h4>Nearby Cafés!</h4>
       </div>
       <div class="col-sm-4">
         <img src="img/Bakery.png" id="icon3">
@@ -310,14 +325,14 @@
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h1>About</h1>
-        <p>This website allows you to right-click anywhere on the map to find the nearest restaurant, coffe shop or bakery!</p>
+        <p>This website allows you to right-click anywhere on the map to find the nearest restaurants, cafés, or bakeries!</p>
       </div>
       <div id="about_id" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src="img/about.png" class="img-responsive">
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h1>Created With</h1>
-        <p>I created this website with HTML5,CSS and JAVASCRIPT<br><br> This website uses google map's API and customized functions to find places within a certain radius</p>
+        <p>I created this website with HTML5,Bootstrap CSS and Javascript<br><br> This website uses Google Map's Places API and customized functions to find places within a radius of 500m</p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src="img/code.png" class="img-responsive">
