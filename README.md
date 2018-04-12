@@ -1,7 +1,7 @@
 # Food-Website
 A website that allows the user to search for nearby restaurants, cafés, or bakeries using Google Map's Places API, BootStrap, and jquery
 
-**NOTE CLICKING ON THE MAP DOESN'T WORK ON GITHUB PAGES, BUT WORKS LOCALLY. NEED TO SOLVE THIS ISSUE, I BELIEVE I NEED TO UPDATE Google Maps JavaScript API**
+**Note clicking on the map doesn't work on github pages, but works locally. Need to solve this issue, i believe i need to update google maps javascript api**
 
 To use: Click on the images to select which options you would like to find.
 
