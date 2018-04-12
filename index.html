@@ -53,7 +53,7 @@
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
-    google.maps.event.addListener(map, 'rightclick', function(event) {
+    google.maps.event.addListener(map, 'click', function(event) {
       map.setCenter(event.latLng)
       clear(markers)
       var here = {
@@ -103,7 +103,7 @@
       if (str == "lincoln") {
         alert("Correct!");
       } else {
-        alert("HINT: My name...");
+        alert("Wrong!");
         location.reload();
       }
     });
@@ -324,7 +324,7 @@
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <h1>About</h1>
-        <p>This website allows you to right-click anywhere on the map to find the nearest restaurants, cafés, or bakeries!</p>
+        <p>This website allows you to left-click anywhere on the map to find the nearest restaurants, cafés, or bakeries!</p>
       </div>
       <div id="about_id" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src="img/about.png" class="img-responsive">
